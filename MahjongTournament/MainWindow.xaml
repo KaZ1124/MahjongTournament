@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MahjongTournament"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="麻雀大会運営" Height="450" Width="800" Padding="10">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
         
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               Content="麻雀大会運営" FontSize="80" Foreground="White" Background="ForestGreen"
+               Height="300" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+        <Button Grid.Row="1" Grid.Column="0" FontSize="30" Content="開く" Margin="10" />
+        <Button Grid.Row="1" Grid.Column="1" FontSize="30" Content="新規作成" Margin="10" />
     </Grid>
 </Window>
