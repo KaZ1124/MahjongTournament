@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:MahjongTournament"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="BasicWindowBackground" Color="#228b22" />
     </Application.Resources>
 </Application>

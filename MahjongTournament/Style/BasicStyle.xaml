@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:MahjongTournament.Style">
+    
+    <!-- 標準ボタンのTemplate -->
+    <ControlTemplate x:Key="BasicButtonTemplate" TargetType="Button">
+        <Grid HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch">
+            <Border x:Name="foreBorder"
+                    BorderThickness="3"
+                    BorderBrush="#FFA500"
+                    CornerRadius="10"
+                    Background="#FFFFFF"
+                    Padding="4" >
+                <TextBlock x:Name="foreText"
+                           Text="{TemplateBinding Content}"
+                           Foreground="#000000"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center" />
+            </Border>
+
+            <Rectangle x:Name="focusBorder"
+                    StrokeThickness="1"
+                    Stroke="#000000"
+                    StrokeDashArray="2 1"
+                    RadiusX="10"
+                    RadiusY="10"
+                    Margin="5"
+                    Visibility="Hidden"/>
+        </Grid>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter TargetName="foreBorder" Property="BorderBrush" Value="#888888" />
+                <Setter TargetName="foreBorder" Property="Background" Value="#AAAAAA" />
+                <Setter TargetName="foreText" Property="Foreground" Value="#CCCCCC" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter TargetName="foreBorder" Property="BorderBrush" Value="#4169e1" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter TargetName="foreBorder" Property="Background" Value="#87cefa" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter TargetName="focusBorder" Property="Visibility" Value="Visible" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!-- 標準的なボタン（サイズ指定なし）-->
+    <Style x:Key="BasicButton" TargetType="Button">
+        <Setter Property="Background" Value="White" />
+        <Setter Property="Template" Value="{StaticResource BasicButtonTemplate}" />
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+    </Style>
+</ResourceDictionary>
