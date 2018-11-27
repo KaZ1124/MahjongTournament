@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahjongTournament", "MahjongTournament.csproj", "{BD5ADE99-0D5E-41F9-876F-FEF970BCD06A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MahjongTournamentTests", "..\MahjongTournamentTests\MahjongTournamentTests.csproj", "{972F2AE4-1E7B-4B9A-8535-8FDE55CD4683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BD5ADE99-0D5E-41F9-876F-FEF970BCD06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD5ADE99-0D5E-41F9-876F-FEF970BCD06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD5ADE99-0D5E-41F9-876F-FEF970BCD06A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972F2AE4-1E7B-4B9A-8535-8FDE55CD4683}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972F2AE4-1E7B-4B9A-8535-8FDE55CD4683}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972F2AE4-1E7B-4B9A-8535-8FDE55CD4683}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972F2AE4-1E7B-4B9A-8535-8FDE55CD4683}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
